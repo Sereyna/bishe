@@ -59,7 +59,7 @@ class Q1(Question):
     f(x)=abs((x-5)/(2+sin(x))) x 在区间[0,15], x取11的时候f(x)取最大值
     m = 4， 编码方式为4
     """
-    m = 4
+    m = 10
     better = 590                            # 定义的较优解
 
     def func(self, args):
@@ -84,7 +84,7 @@ class Q1_1(Question):
     x=17.36左右的时候f(x)取最大值12.31
     m = 11， 编码长度为11, 2^11 = 2048
     """
-    m = 11
+    m = 10
 
     def func(self, args):
         x, = args
@@ -105,7 +105,7 @@ class DeJong(Question):
     m = 24, 编码长度24位,每个变量12位，前12位代表x，后12位代表y
     12位编码中，第1位代表符号：0 为负 1为正，接下来的11位则代表数，2^11=2048
     """
-    m = 24
+    m = 10
     better = -0.01                                    # 定义的更优解
     good = -0.1                                       # 定义的优解
 
@@ -127,7 +127,7 @@ class GoldStein(Question):
     """
     GoldStein 函数：双变量x,y, 均都处于[-2.048,2.048]的区间, f(0,-1)极小值3
     """
-    m = 24
+    m = 10
 
     def func(self, args):
         x, y = args
