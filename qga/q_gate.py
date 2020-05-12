@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-
+旋转门设计
 """
 from random import choice
 import numpy as np

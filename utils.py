@@ -1,11 +1,19 @@
 # -*- coding: utf-8 -*-
 """
-Created on 2018/4/9 3:40
+工具函数
+
+染色体数据的转化
 
 """
 import numpy as np
 import matplotlib.pyplot as plt
 
+# 将十进制数转化为二进制字符串
+def to_binary_code(decimal_code):
+    binary_code = bin(decimal_code).lstrip('0b')
+    return binary_code
+
+# 将量子染色体转变为十进制数
 def to_decimal(a_list):
     l = len(a_list)
     x = 0

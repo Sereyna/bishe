@@ -15,7 +15,7 @@ class QuantumPopulation(object):
     """
     量子种群
     """
-    def __init__(self, question, popSize=15, max_generation=150, step=0.025*np.pi, max_=True):
+    def __init__(self, question, popSize=100, max_generation=50, step=0.025*np.pi, max_=True):
         self.question = question
         self.step = step                                                                    # 静态旋转角步长
 
